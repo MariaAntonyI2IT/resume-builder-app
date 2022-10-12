@@ -1,0 +1,32 @@
+.rb-ts-viewer-container {
+    .rb-ts-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        word-break: break-word;
+        width: 400px;
+        padding: 30px;
+
+        .rb-ts-frontEndSkills-label,
+        .rb-ts-backEndSkills-label,
+        .rb-ts-tools-label,
+        .rb-ts-infra-label {
+            font-size: 14px;
+            font-weight: 800;
+
+        }
+        .rb-ts-frontEndSkills,
+        .rb-ts-backEndSkills,
+        .rb-ts-tools,
+        .rb-ts-infra {
+            padding: 2px 0;
+            overflow-wrap: break-word;
+        }
+
+        .rb-ts-data {
+            opacity: .8;
+            font-size: 13px;
+        }
+    }
+}

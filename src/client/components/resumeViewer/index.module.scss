@@ -1,0 +1,52 @@
+@import './../../styles/variables';
+
+.rb-viewer-container {
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: $bg;
+
+    .rb-vh {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+
+        .rb-vh-left-container {
+            .rb-vh-name {
+                font-size: 18px;
+                font-weight: 600;
+                color: $primary;
+            }
+        }
+
+        .rb-vh-resume-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: $primary;
+        }
+
+        .rb-vh-right-container {
+            button {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .rb-vc {
+        .rb-print-area-wrapper {
+            background: white;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 0.5cm;
+            width: 21cm;
+            box-shadow: 0 0 0.2cm rgba(0, 0, 0, 0.5);
+        }
+    }
+}

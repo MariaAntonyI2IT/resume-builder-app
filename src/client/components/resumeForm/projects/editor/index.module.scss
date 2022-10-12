@@ -1,0 +1,77 @@
+.rb-pr-editor-container {
+    .rb-pr-add-project {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        padding-right: 14px;
+    }
+    .rb-pr-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px;
+
+        .rb-pr-project {
+            border: 1px solid lightgray;
+            padding: 15px;
+            position: relative;
+            margin-bottom: 15px;
+            width: 450px;
+
+            .rb-pr-header-name {
+                font-weight: 800;
+            }
+
+            .rb-pr-remove-project {
+                position: absolute;
+                cursor: pointer;
+                right: -9px;
+                top: -15px;
+            }
+
+            .rb-pr-toggle-project {
+                position: absolute;
+                cursor: pointer;
+                right: 20px;
+                top: -15px;
+            }
+
+            .rb-pr-reorder-project {
+                cursor: pointer;
+                display: inline;
+                padding-right: 10px;
+                position: relative;
+                top: 3px;
+            }
+
+            .rb-project-collapsed-form {
+                display: flex;
+                align-items: center;
+            }
+            
+            .rb-pr-icon {
+                border-radius: 50%;
+                font-size: 21px;
+                border: 1px solid lightgrey;
+                background-color: lightgray;
+            }
+
+            .rb-pr-name,
+            .rb-pr-sd,
+            .rb-pr-ed,
+            .rb-pr-desc {
+                width: 400px;
+            }
+        }
+    }
+    .rb-form-error {
+        border: 1.5px solid red !important;
+     }
+     .rb-form-mandatory {
+        color: red;
+        position: absolute;
+        right: -15px;
+        top: -10px;
+    }
+}

@@ -1,0 +1,39 @@
+.rb-ts-editor-container {
+    .rb-ts-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 30px;
+
+        .rb-ts-frontEndSkills-label,
+        .rb-ts-backEndSkills-label,
+        .rb-ts-tools-label,
+        .rb-ts-infra-label {
+            font-size: 14px;
+            padding: 5px;
+            font-weight: 600;
+
+        }
+
+        .rb-ts-frontEndSkills,
+        .rb-ts-backEndSkills,
+        .rb-ts-tools,
+        .rb-ts-infra {
+            position: relative;
+            width: 400px;
+        }
+    }
+
+    .rb-form-error {
+        border: 1.5px solid red !important;
+    }
+
+    .rb-form-mandatory {
+        color: red;
+        position: absolute;
+        right: -10px;
+        top: 0px;
+    }
+}

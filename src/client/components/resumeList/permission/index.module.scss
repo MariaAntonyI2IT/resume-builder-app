@@ -1,0 +1,158 @@
+@import './../../../styles/variables';
+
+.rb-perm-container {
+    display: block;
+    padding: 20px;
+
+    .rb-perm-seperator {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .rb-user-ddl-container {
+        padding: 20px 0 20px 10px;
+        position: relative;
+        width: 410px;
+    }
+
+    .rb-perm-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 10px 0;
+
+        .rb-perm-list {
+            margin-right: 40px;
+
+            .rb-perm-list-content {
+                overflow: auto;
+                display: flex;
+                padding: 20px 10px;
+
+                .rb-perm-read,
+                .rb-perm-delete,
+                .rb-perm-update,
+                .rb-perm-copy,
+                .rb-perm-share {
+                    font-size: 14px;
+                    font-weight: 500;
+                    background-color: #ececec;
+                    border-color: #ececec;
+                    box-shadow: none;
+
+                    &:active,
+                    &:focus {
+                        background-color: #ececec;
+                        border-color: #ececec;
+                        box-shadow: none;
+                    }
+
+                    &.rb-perm-active,
+                    &:hover {
+                        color: #fff;
+                        background-color: $primary;
+                        border-color: $primary;
+                        box-shadow: none;
+                    }
+
+                }
+            }
+        }
+
+        .rb-perm-shared-list {
+            .rb-perm-shared-list-content {
+                overflow: auto;
+                padding: 20px 0 20px 0;
+                height: 200px;
+
+                .rb-perm-shared-list {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 10px 10px 10px;
+
+
+                    &:hover {
+                        background-color: lightgrey;
+                        border-radius: 4px;
+                    }
+
+                    .rb-perm-sl-left-wrapper {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        .rb-perm-shared-list-avatar {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: $primary;
+                            color: #fff;
+                            font-size: 15px;
+                            font-weight: 600;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 15px;
+                        }
+
+                        .rb-perm-shared-list-text {
+                            .rb-perm-shared-list-name {
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+
+                            .rb-perm-shared-list-mail {
+                                font-size: 14px;
+                                opacity: .7;
+                            }
+                        }
+                    }
+
+                    .rb-perm-sl-right-wrapper {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .rb-perm-shared-list-type {
+                            font-size: 14px;
+                            font-weight: 500;
+                            opacity: .7;
+                        }
+
+                        .rb-perm-shared-list-delete {
+                            margin-top: 7px;
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .rb-form-error {
+        border: 1.5px solid red !important;
+        border-radius: 6px;
+    }
+
+    .rb-form-mandatory {
+        color: red;
+        position: absolute;
+        right: -10px;
+        top: -10px;
+    }
+}
+
+.rb-perm-modal {
+    display: contents;
+
+    .rb-perm-modal-title {
+        font-size: 18px !important;
+    }
+
+    .rb-perm-modal-body {
+        padding: 0;
+    }
+}

@@ -1,0 +1,100 @@
+.rb-profile-viewer-container {
+    .rb-profile-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 10px 0;
+        word-break: break-all;
+
+        .rb-profile-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .rb-profile-left-wrapper {
+                display: flex;
+
+                .rb-profile-left-container {
+                    display: flex;
+                    align-items: center;
+
+                    .rb-profile-avatar {
+                        width: 125px;
+                        height: 150px;
+                        border: 1px solid rgb(206, 212, 218);
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .rb-profile-avatar-label {
+                            font-size: 12px;
+                            font-style: italic;
+                            color: #212529;
+                            opacity: .25;
+                        }
+
+                        .rb-avatar-upload {
+                            display: none;
+                        }
+                    }
+
+                    .rb-profile-avatar-preview {
+                        width: inherit;
+                        height: inherit;
+                    }
+
+
+                    padding-right: 20px;
+                }
+
+                .rb-profile-right-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    line-height: 20px;
+                    
+                    .rb-profile-name {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .rb-profile-role,
+                    .rb-profile-mail {
+                        font-size: 15px;
+                        opacity: .60;
+                    }
+
+                    .rb-profile-mail {
+                        font-size: 13px;
+                    }
+
+                    .rb-profile-name,
+                    .rb-profile-role .rb-profile-mail {
+                        width: 260px;
+                        overflow: hidden;
+                    }
+                }
+
+            }
+
+            .rb-profile-right-wrapper {
+                .rb-profile-image {
+                    img {
+                        width: 100px;
+                        height: 50px;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+
+        .rb-profile-description {
+            padding: 20px 0;
+            padding: 20px 0;
+            font-size: 14px;
+            opacity: .8;
+            word-break: break-word;
+        }
+    }
+}

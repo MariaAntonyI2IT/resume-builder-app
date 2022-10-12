@@ -1,0 +1,103 @@
+@import './../../../styles/variables';
+
+.rb-list-content {
+    margin: auto;
+
+    .rb-list-wrapper-container {
+        margin: auto;
+        width: fit-content;
+
+        .rb-list-table-container {
+            position: relative;
+
+            table {
+                background-color: #fff;
+                position: relative;
+            }
+        }
+
+        .rb-list-wrapper {
+            position: relative;
+            border: 2px solid lightgrey;
+
+            &.rb-list-wrapper-header {
+                background-color: $contentBg;
+            }
+
+            .rb-resume-header {
+                color: $primary;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .rb-resume-name-header {
+                display: flex;
+                color: $primary;
+                cursor: pointer;
+            }
+
+            .rb-resume-name-header,
+            .rb-resume-action-header,
+            .rb-resume-lm-header {
+                padding: 15px;
+            }
+
+            .rb-resume-name-data,
+            .rb-resume-lm-data {
+                padding: 15px;
+            }
+
+            .rb-resume-name-data {
+
+                .rb-resume-shared-name {
+                    font-size: 12px;
+                    font-style: italic;
+                }
+            }
+
+            .rb-resume-action-data {
+                display: flex;
+                padding: 15px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rb-resume-name-data {
+                .rb-resume-name {
+                    font-size: 16px;
+                    font-weight: 500;
+
+                    .rb-resume-name-cat {
+                        font-size: 12px;
+                        font-style: italic;
+                    }
+                }
+            }
+
+            .rb-resume-action-data {
+                opacity: .7;
+
+                .rb-resume-view,
+                .rb-resume-edit,
+                .rb-resume-copy,
+                .rb-resume-delete,
+                .rb-resume-share {
+                    padding: 0 10px 0 10px;
+                    cursor: pointer;
+                }
+
+                .rb-resume-edit {
+                    padding: 0 10px 0 0;
+                }
+            }
+
+            .rb-resume-lm-data {}
+
+        }
+    }
+
+    .rb-resume-nodata {
+        text-align: center;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+@import './../../../styles/variables';
+
+.rb-header-container {
+    height: 70px;
+    background: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $border;
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+}
+
+.rb-header-image {
+    cursor: pointer;
+
+    img {
+        width: 100px;
+        height: 50px;
+        background-size: cover;
+    }
+}
+
+.rb-header-left-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .rb-header-name {
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary;
+    }
+
+    .rb-header-seperator {
+        width: 3px;
+        height: 30px;
+        background: $primary;
+        margin: 0 5px 0px 25px;
+    }
+}
+
+.rb-header-right-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .rb-header-welcome {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0 20px;
+        color: $primary;
+        opacity: .8;
+    }
+}

@@ -1,0 +1,60 @@
+@import './../../styles/variables';
+
+.rb-list-container {
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: $bg;
+
+    .rb-list-header {
+        display: flex;
+        padding: 20px 40px;
+        justify-content: space-between;
+        align-items: center;
+
+        .rb-list-header-name-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .rb-list-header-name {
+                font-size: 18px;
+                font-weight: 800;
+                color: $primary;
+                cursor: pointer;
+                
+                &.rb-list-active {
+                    color: orange;
+                }
+            }
+
+            .rb-list-header-seperator {
+                width: 3px;
+                height: 20px;
+                margin: 0 10px;
+                background-color: lightgray;
+            }
+        }
+
+        .rb-list-right-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .rb-list-create {}
+
+            .rb-resume-settings {
+                margin-left: 15px;
+                margin-top: 3px;
+                color: $primary;
+                cursor: pointer;
+            }
+        }
+    }
+}

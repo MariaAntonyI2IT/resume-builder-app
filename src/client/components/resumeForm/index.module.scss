@@ -1,0 +1,112 @@
+@import './../../styles/variables';
+
+.rb-rf-container {
+    width: 100%;
+
+    .rb-form-container {
+        position: absolute;
+        left: 220px;
+        width: calc(100% - 220px);
+        bottom: 0;
+        right: 0;
+        top: 0;
+        overflow-y: auto;
+        overflow-x: auto;
+        background-color: $bg;
+    }
+
+    .rb-bp-header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        .rb-bp-form-title {
+            position: relative;
+            margin-bottom: 0;
+
+            input {
+                font-size: 15px;
+                background-color: $contentBg;
+            }
+        }
+
+        .rb-bp-header-right-warpper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .rb-rf-icon {
+                font-size: 30px;
+                color: $primary;
+                margin-left: 30px;
+                cursor: pointer;
+            }
+
+            .rb-bp-header-name {
+                font-size: 16px;
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .rb-rf-content {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rb-rf-editor {
+            background-color: $contentBg;
+        }
+
+        .rb-rf-viewer {
+            background-color: #fff;
+        }
+
+        .rb-rf-editor,
+        .rb-rf-viewer {
+            height: 450px;
+            overflow-y: auto;
+            width: 550px;
+            overflow-x: auto;
+            margin: 30px;
+        }
+
+        .rb-rf-label {
+            text-align: center;
+            padding: 15px 0 0 0;
+            font-size: 17px;
+            color: $primary;
+            font-style: italic;
+            font-weight: 800;
+        }
+    }
+
+    .rb-rf-nav {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+
+        button {
+            margin: 10px;
+            background-color: $primary;
+        }
+    }
+
+    .rb-form-error {
+        border: 1.5px solid red !important;
+    }
+
+    .rb-form-mandatory {
+        color: red;
+        position: absolute;
+        right: -15px;
+        top: -10px;
+    }
+}

@@ -1,0 +1,68 @@
+@import './../../../styles/variables';
+
+.rb-req-perm-container {
+    display: block;
+    padding: 20px;
+
+    .rb-req-perm-seperator {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+
+    .rb-req-perm-list {
+        margin-right: 40px;
+
+        .rb-req-perm-desc {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .rb-req-perm-list-content {
+            overflow: auto;
+            display: flex;
+            padding: 20px 0;
+
+            .rb-req-perm-read,
+            .rb-req-perm-delete,
+            .rb-req-perm-update,
+            .rb-req-perm-copy,
+            .rb-req-perm-share {
+                font-size: 14px;
+                font-weight: 500;
+                background-color: #ececec;
+                border-color: #ececec;
+                box-shadow: none;
+
+                &:active,
+                &:focus {
+                    background-color: #ececec;
+                    border-color: #ececec;
+                    box-shadow: none;
+                }
+
+                &.rb-req-perm-active,
+                &:hover {
+                    color: #fff;
+                    background-color: $primary;
+                    border-color: $primary;
+                    box-shadow: none;
+                }
+
+            }
+        }
+    }
+
+}
+
+.rb-req-perm-modal {
+    display: contents;
+
+    .rb-req-perm-modal-title {
+        font-size: 18px !important;
+    }
+
+    .rb-req-perm-modal-body {
+        padding: 0;
+    }
+}

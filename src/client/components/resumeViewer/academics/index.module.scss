@@ -1,0 +1,32 @@
+.rb-ac-viewer-container {
+    .rb-ac-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 30px 0px 0;
+        word-break: break-word;
+
+        .rb-ac-course,
+        .rb-ac-college{
+            padding: 2px 0;
+            overflow-wrap: break-word;
+        }
+
+        .rb-ac-course-data {
+            font-size: 14px;
+            font-weight: 600;
+            opacity: .8;
+
+        }
+        .rb-ac-college-data {
+            font-size: 14px;
+            font-weight: 600;
+            opacity: .8;
+        }
+        .rb-ac-stream-data{
+            opacity: .8;
+            font-size: 13px;
+        }
+    }
+}

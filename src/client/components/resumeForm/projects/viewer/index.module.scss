@@ -1,0 +1,39 @@
+.rb-pr-viewer-container {
+    .rb-pr-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 30px 20px;
+        word-break: break-all;
+
+        .rb-pr-project {
+            border: 1px solid lightgray;
+            padding: 0px;
+            position: relative;
+            margin-bottom: 15px;
+            width: 450px;
+            margin: 10px;
+
+            .rb-pr-name,
+            .rb-pr-desc {
+             padding: 10px;
+            }
+
+            .rb-pr-name {
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            .rb-pr-desc {
+                opacity: .8;
+                font-size: 14px;
+
+            }
+            .rb-pr-date {
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+}

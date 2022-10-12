@@ -1,0 +1,31 @@
+.rb-pr-viewer-container {
+    .rb-pr-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        word-break: break-all;
+
+        .rb-pr-project {
+            position: relative;
+            word-break: break-word;
+
+            .rb-pr-name {
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            .rb-pr-desc {
+                opacity: .8;
+                font-size: 13px;
+                font-style: italic;
+                page-break-after: always
+
+            }
+            .rb-pr-date {
+                font-weight: 300;
+                font-style: italic;
+            }
+        }
+    }
+}

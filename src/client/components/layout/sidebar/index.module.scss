@@ -1,0 +1,53 @@
+@import './../../../styles/variables';
+
+.rb-sidebar-container {
+    padding: 5rem 2rem 2rem 2rem;;
+    display: flex;
+    width: 220px;
+    border-right: 1px solid lightgray;
+    background-color: $sideBg;
+    color: #ffffff;
+    position: absolute;
+    overflow-y: auto;
+    bottom: 0;
+    left: 0;
+    top:0;
+
+    .rb-form-status-container {
+        .rb-form-invalid {
+            color: red;
+        }
+
+        .rb-circle-indication {
+            width: 1rem;
+            height: 1rem;
+            background-color: orange;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            .rb-name {
+                position: absolute;
+                left: 4rem;
+            }
+
+            .rb-selected {
+                height: .5rem;
+                width: .5rem;
+                background: #ffffff;
+                border-radius: 50%;
+            }
+        }
+
+        .rb-seperator {
+            width: .2rem;
+            height: 5rem;
+            background: #ffffff;
+            position: relative;
+            left: 0.4rem;
+        }
+    }
+
+}
